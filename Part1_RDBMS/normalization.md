@@ -122,3 +122,14 @@ LEFT JOIN Orders o ON p.product_id = o.product_id
 WHERE o.order_id IS NULL;
 
 [queries.sql](https://github.com/user-attachments/files/26156554/queries.sql)
+
+
+Normalization Justification
+
+The argument that a single flat table is "simpler" is a common misconception that prioritizes initial setup speed over long-term data integrity and system scalability. While a flat file like orders_flat.csv is easy to read at a glance, it is fundamentally flawed for a growing business.
+
+Data Integrity and Redundancy: In the current dataset, customer details for Rohan Mehta (C001) are duplicated across every order he places. If the company needs to update his email address, an administrator must update dozens of rows. If even one row is missed, the system enters an inconsistent state where the "source of truth" is lost. Normalization to 3NF ensures that each piece of information (like a customer's email or a product's price) is stored in exactly one place.
+
+Operational Limitations: The flat structure prevents basic business operations. For example, we cannot store information about a new Sales Representative or a New Product until a sale occurs. If we delete a customer's only order, we accidentally erase the customer's contact history from our database. By separating these into Customers, Products, and SalesReps tables, we can manage our assets and personnel independently of sales transactions.
+
+Normalization is not over-engineering; it is a necessary architectural step to prevent data corruption, reduce storage waste, and provide a reliable foundation for business reporting.
