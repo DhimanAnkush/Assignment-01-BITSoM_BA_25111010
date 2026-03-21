@@ -1,0 +1,53 @@
+[
+    {
+        "product_id": "E101",
+        "name": "UltraBook Pro 15",
+        "category": "Electronics",
+        "price": 85000,
+        "specs": {
+            "voltage": "110-240V",
+            "warranty_years": 2,
+            "battery": "90Wh"
+        },
+        "features": [
+            "4K Display",
+            "Backlit Keyboard",
+            "Thunderbolt 4"
+        ]
+    },
+    {
+        "product_id": "C202",
+        "name": "Performance Running Shoes",
+        "category": "Clothing",
+        "brand": "SwiftFoot",
+        "attributes": {
+            "size": [
+                "8",
+                "9",
+                "10",
+                "11"
+            ],
+            "color": [
+                "Neon Blue",
+                "Stealth Black"
+            ],
+            "material": "Recycled Polyester"
+        },
+        "care_instructions": "Machine wash cold"
+    },
+    {
+        "product_id": "G303",
+        "name": "Organic Almond Milk",
+        "category": "Groceries",
+        "price": 350,
+        "expiry_date": "2024-12-15T00:00:00Z",
+        "nutrition": {
+            "calories": 60,
+            "fat": "2.5g",
+            "protein": "1g",
+            "allergens": [
+                "Tree Nuts"
+            ]
+        }
+    }
+]
