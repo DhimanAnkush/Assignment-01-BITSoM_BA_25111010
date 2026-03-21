@@ -10,3 +10,4 @@ If Row 0 is updated but Row 3 is missed, the database will contain conflicting i
 
 Delete Anomaly: If Vikram Singh (C005) has only one order in the system (e.g., ORD1075 in Row 7) 
 and that order is deleted due to a cancellation, we lose all information about Vikram (his email and city) as well.
+
