@@ -1,4 +1,4 @@
-## Design Justification: Hospital AI Data System
+## 6.2 Design Justification: Hospital AI Data System
 
 ## Storage Systems
 To meet the four diverse goals of the hospital network, a multi-modal storage strategy was chosen to balance speed, structure, and searchability:
